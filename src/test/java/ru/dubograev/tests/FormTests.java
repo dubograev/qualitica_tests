@@ -1,5 +1,6 @@
 package ru.dubograev.tests;
 
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -13,6 +14,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @Tag("UI")
+@Feature("Order Testing form")
 public class FormTests extends TestBase {
 
     OrderTestingForm form = new OrderTestingForm();
@@ -20,8 +22,8 @@ public class FormTests extends TestBase {
     @Test
     @DisplayName("Verify that user is able to submit the form")
     void formTest() {
-        step("Open the main page", () -> {
-            open("https://qualitica.ru/");
+        step("Open main page", () -> {
+            open("");
         });
 
         step("Click on 'Заказать тестирование' button", () -> {

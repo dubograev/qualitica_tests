@@ -2,7 +2,6 @@ package ru.dubograev.pages;
 
 import io.qameta.allure.Step;
 
-import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class OrderTestingForm {
@@ -38,9 +37,5 @@ public class OrderTestingForm {
         $("[name=name]").setValue(name);
 
         return this;
-    }
-
-    public void clickOrderTestingButton() {
-        $(".abs-button").$(byText("Заказать тестирование")).click();
     }
 }
