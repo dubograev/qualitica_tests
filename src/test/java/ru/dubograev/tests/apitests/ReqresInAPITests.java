@@ -100,7 +100,7 @@ public class ReqresInAPITests {
     }
 
     @Test
-    @DisplayName("Put tess")
+    @DisplayName("Put test")
     public void updateUserViaPutTest() {
         given()
                 .contentType(JSON)
