@@ -19,7 +19,6 @@ public class TestBase {
     static void setUp() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         DriverSettings.configure();
-        Configuration.baseUrl = "https://qualitica.ru";
     }
 
     @AfterEach
