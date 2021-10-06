@@ -30,8 +30,8 @@ public class MainPageTests extends TestBase {
     @Description("This test verifies that the header and the description contain correct text")
     @DisplayName("Header and description should be correct")
     void generatedTest() {
-        step("Open url https://qualitica.ru", () -> {
-            open("https://qualitica.ru");
+        step("Open url " + Configuration.baseUrl, () -> {
+            open("");
         });
 
         step("Check that the header is " + HEADER, () -> {
