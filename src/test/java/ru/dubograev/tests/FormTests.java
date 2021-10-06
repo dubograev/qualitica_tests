@@ -1,6 +1,7 @@
 package ru.dubograev.tests;
 
 import io.qameta.allure.Feature;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -20,6 +21,7 @@ public class FormTests extends TestBase {
     OrderTestingForm form = new OrderTestingForm();
 
     @Test
+    @Disabled
     @DisplayName("Verify that user is able to submit the form")
     void formTest() {
         step("Open main page", () -> {
