@@ -45,10 +45,6 @@ public class FormTests extends TestBase {
         step("Verify that a pop-up with text 'Письмо отправлено' should appear", () -> {
             $("#win2").shouldHave(text("Письмо отправлено"));
         });
-        //$("#win2").$(".win_button").shouldHave(text("Ok"));
-
-        $(".win_button").click();
-        $("#win2").shouldNotBe(visible);
     }
 
     private void clickOrderTestingButton() {
