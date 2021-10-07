@@ -36,10 +36,10 @@ You can run tests by configuring the following parameters:
 
 ![](src/test/resources/files/jenkins_params.png "Jenkins")
 
-### To run tests locally (default):
+#### To run tests locally (default):
 `gradle clean test`
 
-### To run tests on Selenoid:
+#### To run tests on Selenoid:
 ```
 gradle clean test
   -Dweb.remote.driver.url=selenoid.autotests.cloud
