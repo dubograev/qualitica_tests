@@ -1,10 +1,7 @@
 package ru.dubograev.tests;
 
 import com.codeborne.selenide.Configuration;
-import io.qameta.allure.Description;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -26,6 +23,7 @@ public class MainPageTests extends TestBase {
             "корпоративное программное обеспечение";
 
     @Test
+    @AllureId("5086")
     @Severity(SeverityLevel.CRITICAL)
     @Description("This test verifies that the header and the description contain correct text")
     @DisplayName("Header and description should be correct")
@@ -43,6 +41,7 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
+    @AllureId("5090")
     @Severity(SeverityLevel.NORMAL)
     @Description("This test verifies that the browser's tab title contains correct text")
     @DisplayName("Page title should be correct")
@@ -58,6 +57,7 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
+    @AllureId("5089")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Page console log should not have errors")
     void consoleShouldNotHaveErrorsTest() {

@@ -2,6 +2,7 @@ package ru.dubograev.tests;
 
 import com.codeborne.pdftest.PDF;
 import com.codeborne.selenide.Configuration;
+import io.qameta.allure.AllureId;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
@@ -24,6 +25,7 @@ public class ClientsPageTests extends TestBase {
     private final static int AMOUNT_OF_CLIENTS = 8;
 
     @Test
+    @AllureId("5087")
     @Description("This test verifies that the browser's tab title contains correct text")
     @DisplayName("Page title of the Clients page should be correct")
     void clientsTitleTest() {
@@ -39,6 +41,7 @@ public class ClientsPageTests extends TestBase {
     }
 
     @Test
+    @AllureId("5088")
     @DisplayName("Verify that the amount of clients is " + AMOUNT_OF_CLIENTS)
     void amountOfClients() {
         step("Open test url " + Configuration.baseUrl + CLIENTS_URL, () -> {
@@ -51,6 +54,8 @@ public class ClientsPageTests extends TestBase {
     }
 
     @Test
+    @AllureId("5091")
+    @DisplayName("PDF document test")
     void filePresentationTest() throws Exception {
         open(CLIENTS_URL);
         File presentationPdf = $("a[href='/Qualitica.pdf']").download();

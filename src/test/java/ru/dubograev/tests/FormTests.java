@@ -1,5 +1,6 @@
 package ru.dubograev.tests;
 
+import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
@@ -21,6 +22,7 @@ public class FormTests extends TestBase {
     OrderTestingForm form = new OrderTestingForm();
 
     @Test
+    @AllureId("5077")
     @Disabled
     @DisplayName("Verify that user is able to submit the form")
     void formTest() {
